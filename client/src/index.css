@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #636363;
+}
+
+.btn-apply-dark {
+	border: 2px solid black;
+	padding: 10px 20px;
+}
+
+.btn-apply-light {
+	border: 2px solid white;
+	padding: 10px 20px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.todo-container {
+	width: 95vw;
+	background: rgb(144, 174, 231);
+	position: relative;
+	margin: 20px auto;
+}
+.todo-form {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
+	justify-content: center;
+}
+.todo-form input {
+	padding: 10px 10rem;
+	margin-bottom: 10px;
+	outline: none;
+	border-radius: 10px;
+	border: transparent;
+}
+.input::placeholder {
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	color: grey;
+	text-align: left;
+}
+
+.todo-form button {
+	padding: 0.75rem 3rem;
+	outline: 2px solid rgb(15, 82, 206);
+	outline-offset: 0.3rem;
+	border: none;
+	justify-self: center;
+	background: rgb(2, 26, 71);
+	color: white;
+	font-weight: 700;
+}
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+}
+.todos {
+	display: grid;
+	gap: 0.75rem;
+	grid-template-columns: repeat(2, 1fr);
+	max-width: 992px;
+	width: 95vw;
+	margin: 30px auto;
+	/* grid-template-rows: repeat(auto, 1fr); */
+}
+.todos li {
+	list-style-type: none;
+	/* background: white; */
+	margin: 10px;
+	/* color: rgb(2, 26, 71); */
+	padding: 10px;
+	border-radius: 1rem;
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 700;
+	letter-spacing: 2px;
+	line-height: 1;
+	font-size: 1rem;
+}
+.list-items {
+	display: grid;
+}
+.list-items button {
+	margin: 0 10px;
+	padding: 5px;
+	border: none;
+	background: white;
+	color: rgb(2, 26, 71);
+}
+.todos-heading {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2rem;
+	color: rgb(2, 26, 71);
+}
+.completed {
+	background: red;
+	color: white;
+}
+.not-completed {
+	background: white;
+}
